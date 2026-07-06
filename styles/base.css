@@ -13,16 +13,23 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Montserrat", Verdana, sans-serif;
     color: var(--text-color);
     background-color: #fff;
 }
 
-main, footer, header {
+main {
     max-width: 960px;
     margin: 20px auto;
 }
-
+header{
+    max-width: 960px;
+    margin: 20px auto;
+}
+footer{
+    max-width: 960px;
+    margin: 20px auto;
+}
 header {
     display: flex;
     flex-direction: column;
@@ -31,7 +38,7 @@ header {
 
 #course-title {
     background-color: var(--secondary-color);
-    color: white;
+    color: #1e4742;
     padding: 20px 0;
     font-size: 1.4rem;
     font-weight: bold;
@@ -64,21 +71,12 @@ nav a:hover {
     margin: 25px 0;
     font-weight: normal;
 }
-
-
 .groups {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     gap: 20px;
-    align-items: flex-start;
+    align-items: start;
     padding: 0 10px;
-}
-
-.card {
-    flex: 3;
-}
-
-.card2 {
-    flex: 1;
 }
 
 
