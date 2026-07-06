@@ -25,12 +25,6 @@ main {
 header{
     max-width: 960px;
     margin: 20px auto;
-}
-footer{
-    max-width: 960px;
-    margin: 20px auto;
-}
-header {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -159,6 +153,8 @@ footer {
     text-align: center;
     padding: 15px 0;
     border-radius: 4px;
+    max-width: 960px;
+    margin: 20px auto;
 }
 
 footer p {
