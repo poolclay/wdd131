@@ -71,3 +71,7 @@ footer {
     padding: 1rem;
     margin-top: 1rem;
 }
+.weather-icon {
+    display: block;
+    margin: 0 auto 1rem;
+}

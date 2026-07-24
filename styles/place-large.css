@@ -26,13 +26,26 @@
         top: 15%;
         right: 5%;
     }
-
-    /* Weather icon as pseudo-element - large view only */
     .weather h2::after {
         content: " ⛅";
     }
 
     footer {
         margin-top: 0;
+    }
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: "";
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        margin-left: 0.4em;
+        vertical-align: middle;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="26" cy="24" r="11" fill="%23f6b93b"/><path d="M20 46a9 9 0 0 1 1-18 12 12 0 0 1 23 3 8 8 0 0 1-1 15z" fill="%23b0aa9d"/></svg>');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
