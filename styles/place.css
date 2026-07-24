@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #bc002d;
+    --secondary-color: #f7f7f7;
+    --accent-color: #2b2b2b;   
+    --text-color: #1a1a1a;
+    --light-text: #ffffff;       
+    --card-bg: #ffffff;        
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+h1.place {
+    color: var(--light-text);
+    text-align: center;
+}
+
+.fuji {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+section {
+    background-color: var(--card-bg);
+    margin: 1rem auto;
+    padding: 1.5rem 1rem;
+    max-width: 500px;
+    border: 1px solid var(--accent-color);
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 0.6rem 0.75rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.label {
+    font-weight: 700;
+    text-align: right;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}

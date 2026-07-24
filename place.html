@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rodrigo Castillo">
+    <meta name="description" content="Get to know Mt Fuji better with this info!">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>Mt Fuji</title>
+</head>
+<body>
+    <header>
+    <h1 class="place">Mt Fuji</h1>
+    </header>
+    <picture>
+     <source media="(max-width: 768px)" srcset="images/mtfuji-small.webp">
+     <img class="fuji" src="images/mtfuji-large.webp" alt="Mt Fuji with tower">
+    </picture>
+    <section class="data">
+    <h2>Data</h2>
+    <div class="info">
+      <span class="label">Elevation:</span>       <span>3,776 m (12,389 ft)</span>
+      <span class="label">Location:</span>        <span>Honshu, Japan</span>
+      <span class="label">Prefectures:</span>     <span>Shizuoka, Yamanashi</span>
+      <span class="label">Type:</span>            <span>Stratovolcano</span>
+      <span class="label">Last Eruption:</span>   <span>1707&ndash;1708 (Hōei)</span>
+      <span class="label">First Ascent:</span>    <span>663 AD</span>
+      <span class="label">Time Zone:</span>       <span>UTC+9 (JST)</span>
+      <span class="label">Status:</span>          <span>UNESCO World Heritage Site (2013)</span>
+    </div>
+    </section>
+     <section class="weather">
+    <h2>Weather</h2>
+    <div class="info">
+      <span class="label">Temperature:</span>  <span>-6 &deg;C</span>
+      <span class="label">Conditions:</span>   <span>Partly Cloudy</span>
+      <span class="label">Wind:</span>         <span>20 km/h</span>
+      <span class="label">Wind Chill:</span>   <span id="windchill"></span>
+    </div>
+  </section>
+ <footer>
+    <p>🐸 &copy; <span id="currentyear"></span> Rodrigo Castillo 🐸 Lima, Peru 🐸</p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>
